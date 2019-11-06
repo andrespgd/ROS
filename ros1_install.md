@@ -1,6 +1,7 @@
 # ROS INSTALL
 
-## Instructions for ROS1-Melodic for Ubuntu18.04
+## ROS1-Melodic for Ubuntu18.04
+
 http://wiki.ros.org/melodic/Installation/Ubuntu
 
 ```
@@ -12,7 +13,7 @@ sudo rosdep init
 rosdep update
 ```
 
-bash env setup
+bash env setup:
 ```
 echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
