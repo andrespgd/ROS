@@ -16,6 +16,8 @@ rosdep update
 ```
 echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
+```
 OR
+```
 source /opt/ros/melodic/setup.bash
 ```
