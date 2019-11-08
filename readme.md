@@ -33,3 +33,51 @@ http://wiki.ros.org/kinetic/Installation/Ubuntu
 - $ sudo apt-get install ros-kinetic-desktop-full
 - E: Unable to locate package ros-kinetic-desktop-full
 ```
+
+
+
+
+## Cool ROS samples
+
+-- robotic arm simulation -- Does NOT in Ubuntu18-Ros1-Melodic!
+```
+source /opt/ros/melodic/setup.bash
+mkdir -p ~/catkin_ws/src
+cd ~/catkin_ws/src 
+git clone https://TheConstruct@bitbucket.org/theconstructcore/iri_wam.git -b kinetic
+git clone https://github.com/ros-controls/ros_controllers
+git clone https://github.com/ros-drivers/four_wheel_steering_msgs
+git clone https://github.com/ros-controls/urdf_geometry_parser
+cd ..
+catkin_make
+roslaunch iri_wam_gazebo main.launch
+```
+
+-- wheeled robot simulation -- Does NOT in Ubuntu18-Ros1-Melodic!
+```
+source /opt/ros/melodic/setup.bash
+mkdir -p ~/catkin_ws/src
+cd ~/catkin_ws/src 
+git clone https://TheConstruct@bitbucket.org/theconstructcore/summit_xl.git -b kinetic
+git clone https://github.com/RobotnikAutomation/robotnik_msgs
+git clone https://github.com/cra-ros-pkg/robot_localization
+git clone https://github.com/ros-geographic-info/geographic_info
+git clone https://github.com/ros-geographic-info/unique_identifier
+git clone https://github.com/mavlink/mavros
+git clone https://github.com/mavlink/mavlink
+cd ..
+catkin_make
+roslaunch sumit_xl_course_basics main.launch
+```
+
+-- full environment simulation -- Works in Ubuntu18-Ros1-Melodic
+```
+source /opt/ros/melodic/setup.bash
+mkdir -p ~/catkin_ws/src
+cd catkin_ws/src
+hg clone https://TheConstruct@bitbucket.org/osrf/servicesim
+git clone https://github.com/Kukanani/vision_msgs
+cd ..
+catkin_make
+roslaunch servicesim servicesim.launch
+```
