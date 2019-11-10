@@ -1,5 +1,5 @@
 # ROS INSTALL
-</br></br>
+</br>
 
 ## ROS1-Melodic for Ubuntu18.04
 
@@ -24,7 +24,7 @@ OR
 source /opt/ros/melodic/setup.bash
 ```
 
-</br></br>
+</br>
 
 ## ROS1-Kinetic for Ubuntu16.04
 http://wiki.ros.org/kinetic/Installation/Ubuntu
@@ -44,6 +44,7 @@ sudo apt install python-rosinstall python-rosinstall-generator python-wstool bui
 source /opt/ros/kinetic/setup.bash
 ```
 
+</br></br>
 
 ## Cool ROS samples
 
