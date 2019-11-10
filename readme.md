@@ -29,12 +29,20 @@ source /opt/ros/melodic/setup.bash
 ## ROS1-Kinetic for Ubuntu16.04
 http://wiki.ros.org/kinetic/Installation/Ubuntu
 ```diff
-- it will not install on Ubuntu18.04 !!!
-- $ sudo apt-get install ros-kinetic-desktop-full
-- E: Unable to locate package ros-kinetic-desktop-full
+- will NOT install on Ubuntu18.04 !!!
 ```
-
-
+```
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
+sudo apt-get update
+sudo apt-get install ros-kinetic-desktop-full
+sudo rosdep init
+rosdep update
+sudo apt install python-rosinstall python-rosinstall-generator python-wstool build-essential
+```
+```
+source /opt/ros/kinetic/setup.bash
+```
 
 
 ## Cool ROS samples
