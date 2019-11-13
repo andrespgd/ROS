@@ -44,9 +44,8 @@ sudo apt install python-rosinstall python-rosinstall-generator python-wstool bui
 ```
 source /opt/ros/kinetic/setup.bash
 ```
-
-
 </br>
+
 
 ## ROS2-Kinetic for Ubuntu18.04
 https://index.ros.org/doc/ros2/Installation/Dashing/Linux-Install-Debians/
@@ -70,7 +69,9 @@ sudo apt install python3-argcomplete
 ```
 source /opt/ros/dashing/setup.bash
 ```
-quick ROS2 examples to test that is working correctly
+</br>
+
+ROS2 examples to test that is working correctly
 
 terminal1
 ``` 
@@ -82,7 +83,7 @@ terminal2
 source /opt/ros/dashing/local_setup.bash
 ros2 run demo_nodes_py listener
 ```
-
+</br>
 
 COLCON 
 - is an iteration on the ROS build tools catkin_make, catkin_make_isolated, catkin_tools and ament_tools
