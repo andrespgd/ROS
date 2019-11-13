@@ -64,6 +64,11 @@ sudo sh -c 'echo "deb [arch=amd64,arm64] http://packages.ros.org/ros2/ubuntu `ls
 sudo apt update
 
 sudo apt install ros-dashing-desktop
+
+sudo apt install python3-argcomplete
+```
+```
+source /opt/ros/dashing/setup.bash
 ```
 
 
