@@ -84,11 +84,13 @@ ros2 run demo_nodes_py listener
 ```
 
 
-COLCON is an iteration on the ROS build tools catkin_make, catkin_make_isolated, catkin_tools and ament_tools
+COLCON 
+- is an iteration on the ROS build tools catkin_make, catkin_make_isolated, catkin_tools and ament_tools
 https://index.ros.org/doc/ros2/Tutorials/Colcon-Tutorial/
 ```
 sudo apt install python3-colcon-common-extensions
 ```
+Sample package to build in ROS2 using COLCON
 ```
 source /opt/ros/dashing/setup.bash 
 mkdir -p ~/ros2_example_ws/src
@@ -99,6 +101,23 @@ git checkout $ROS_DISTRO
 cd ~/ros2_example_ws
 colcon build --symlink-install
 ```
+Source the environment:
+```
+. install/setup.bash
+```
+terminal1 - subscriber
+```
+cd ros2_example_ws/
+. install/setup.bash 
+ros2 run examples_rclcpp_minimal_subscriber subscriber_member_function
+```
+terminal2 - publisher
+```
+cd ros2_example_ws/
+. install/setup.bash 
+ros2 run examples_rclcpp_minimal_publisher publisher_member_function
+```
+
 
 </br></br>
 
