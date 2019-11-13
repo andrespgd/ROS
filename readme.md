@@ -71,11 +71,13 @@ sudo apt install python3-argcomplete
 source /opt/ros/dashing/setup.bash
 ```
 quick ROS2 examples to test that is working correctly
-``` terminal1
+terminal1
+``` 
 source /opt/ros/dashing/local_setup.bash
 ros2 run demo_nodes_cpp talker
 ```
-``` terminal2
+terminal2
+``` 
 source /opt/ros/dashing/local_setup.bash
 ros2 run demo_nodes_py listener
 ```
