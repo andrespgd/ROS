@@ -45,6 +45,29 @@ sudo apt install python-rosinstall python-rosinstall-generator python-wstool bui
 source /opt/ros/kinetic/setup.bash
 ```
 
+
+</br>
+
+## ROS2-Kinetic for Ubuntu16.04
+https://index.ros.org/doc/ros2/Installation/Dashing/Linux-Install-Debians/
+```
+sudo locale-gen en_US en_US.UTF-8
+sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+sudo apt update && sudo apt install curl gnupg2 lsb-release
+
+curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
+
+sudo sh -c 'echo "deb [arch=amd64,arm64] http://packages.ros.org/ros2/ubuntu `lsb_release -cs` main" > /etc/apt/sources.list.d/ros2-latest.list'
+
+sudo apt update
+
+sudo apt install ros-dashing-desktop
+```
+
+
+
 </br></br>
 
 ## Cool ROS samples
