@@ -48,7 +48,7 @@ source /opt/ros/kinetic/setup.bash
 
 </br>
 
-## ROS2-Kinetic for Ubuntu16.04
+## ROS2-Kinetic for Ubuntu18.04
 https://index.ros.org/doc/ros2/Installation/Dashing/Linux-Install-Debians/
 ```
 sudo locale-gen en_US en_US.UTF-8
