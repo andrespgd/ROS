@@ -70,7 +70,7 @@ source /opt/ros/dashing/setup.bash
 ```
 </br></br>
 
-ROS2 examples to test that is working correctly
+ROS2 - prebuilt examples to test
 
 terminal1
 ``` 
@@ -84,7 +84,7 @@ ros2 run demo_nodes_py listener
 ```
 </br></br>
 
-COLCON 
+ROS2 - COLCON 
 - is an iteration on the ROS build tools catkin_make, catkin_make_isolated, catkin_tools and ament_tools
 https://index.ros.org/doc/ros2/Tutorials/Colcon-Tutorial/
 ```
@@ -119,7 +119,7 @@ ros2 run examples_rclcpp_minimal_publisher publisher_member_function
 ```
 </br></br>
 
-Creating your own packages in ROS2
+ROS2 - Create your own packages
 ```
 ros2 pkg create ros2_example2_ws
 ```
