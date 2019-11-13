@@ -71,6 +71,7 @@ sudo apt install python3-argcomplete
 source /opt/ros/dashing/setup.bash
 ```
 quick ROS2 examples to test that is working correctly
+
 terminal1
 ``` 
 source /opt/ros/dashing/local_setup.bash
