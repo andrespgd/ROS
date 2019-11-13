@@ -1,5 +1,5 @@
 # ROS INSTALL
-</br>
+</br></br>
 
 ## ROS1-Melodic for Ubuntu18.04
 
@@ -23,8 +23,7 @@ OR
 ```
 source /opt/ros/melodic/setup.bash
 ```
-
-</br>
+</br></br>
 
 ## ROS1-Kinetic for Ubuntu16.04
 http://wiki.ros.org/kinetic/Installation/Ubuntu
@@ -44,7 +43,7 @@ sudo apt install python-rosinstall python-rosinstall-generator python-wstool bui
 ```
 source /opt/ros/kinetic/setup.bash
 ```
-</br>
+</br></br>
 
 
 ## ROS2-Kinetic for Ubuntu18.04
@@ -69,7 +68,7 @@ sudo apt install python3-argcomplete
 ```
 source /opt/ros/dashing/setup.bash
 ```
-</br>
+</br></br>
 
 ROS2 examples to test that is working correctly
 
@@ -83,7 +82,7 @@ terminal2
 source /opt/ros/dashing/local_setup.bash
 ros2 run demo_nodes_py listener
 ```
-</br>
+</br></br>
 
 COLCON 
 - is an iteration on the ROS build tools catkin_make, catkin_make_isolated, catkin_tools and ament_tools
@@ -118,7 +117,7 @@ cd ros2_example_ws/
 . install/setup.bash 
 ros2 run examples_rclcpp_minimal_publisher publisher_member_function
 ```
-</br>
+</br></br>
 
 Creating your own packages in ROS2
 ```
