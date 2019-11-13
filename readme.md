@@ -118,7 +118,14 @@ cd ros2_example_ws/
 . install/setup.bash 
 ros2 run examples_rclcpp_minimal_publisher publisher_member_function
 ```
+</br>
 
+Creating your own packages in ROS2
+```
+ros2 pkg create ros2_example2_ws
+```
+-will create files: CMakeLists.txt, package.xml
+-will create folders: include , src
 
 </br></br>
 
