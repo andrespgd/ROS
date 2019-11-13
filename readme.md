@@ -84,6 +84,22 @@ ros2 run demo_nodes_py listener
 ```
 
 
+COLCON is an iteration on the ROS build tools catkin_make, catkin_make_isolated, catkin_tools and ament_tools
+https://index.ros.org/doc/ros2/Tutorials/Colcon-Tutorial/
+```
+sudo apt install python3-colcon-common-extensions
+```
+```
+source /opt/ros/dashing/setup.bash 
+mkdir -p ~/ros2_example_ws/src
+cd ~/ros2_example_ws
+git clone https://github.com/ros2/examples src/examples
+cd ~/ros2_example_ws/src/examples/
+git checkout $ROS_DISTRO
+cd ~/ros2_example_ws
+colcon build --symlink-install
+```
+
 </br></br>
 
 ## Cool ROS samples
