@@ -76,4 +76,40 @@ roslaunch urdf_tutorial model:=01-myfirst.urdf
 roslaunch urdf_tutorial display.launch model:=02-mutipleshapes.urdf
 ```
 
+## Joint with origin for both link and joint
+
+1- create
+```
+<?xml version="1.0"?>
+<robot name="origins">
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <cylinder length="0.6" radius="0.2"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="right_leg">
+    <visual>
+      <geometry>
+        <box size="0.6 .2 .1"/>
+      </geometry>
+      <origin rpy="0 1.57075 0" xyz="0 0 -0.3"/>
+    </visual>
+  </link>
+  <joint name="base_to_right_leg" type="fixed">
+    <parent link="base_link"/>
+    <child link="right_leg"/>
+    <origin xyz="0.22 0 .25"/>
+  </joint>
+</robot>
+```
+
+2-
+```
+roslaunch urdf_tutorial display.launch model:=03-origins.urdf
+```
+
+
+
 
