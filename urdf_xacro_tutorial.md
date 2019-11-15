@@ -1,4 +1,8 @@
+## Followed tutorial from:
 
+https://u.cs.biu.ac.il/~yehoshr1/89-685/ROS_Lecture9.pptx
+
+## Single body
 
 1-create file 01-myfirst.urdf
 ```
@@ -36,3 +40,40 @@ source /opt/ros/melodic/setup.bash
 ```
 roslaunch urdf_tutorial model:=01-myfirst.urdf
 ```
+
+
+## Joint
+
+1-create 02-multipleshapes.urdf
+```
+<?xml version="1.0"?>
+<robot name="multipleshapes">
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <cylinder length="0.6" radius="0.2"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <link name="right_leg">
+    <visual>
+      <geometry>
+        <box size="0.6 .2 .1"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <joint name="base_to_right_leg" type="fixed">
+    <parent link="base_link"/>
+    <child link="right_leg"/>
+  </joint>
+</robot>
+```
+
+2-
+```
+roslaunch urdf_tutorial display.launch model:=02-mutipleshapes.urdf
+```
+
+
