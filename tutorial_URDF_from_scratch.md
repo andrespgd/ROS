@@ -179,13 +179,15 @@ roslaunch urdf_tutorial display.launch model:=04-materials.urdf
 rosdep install urdf_tutorial
 ```
 
-will contain files such as: "package://urdf_tutorial/meshes/l_finger_tip.dae"
-
 these packages get installed at this location:
+```diff
+- /opt/ros/melodic/share/urdf_tutorial
+```
 
-/opt/ros/melodic/share/urdf_tutorial
-
-
+to call the files in the URDF use:
+```
+filename="package://urdf_tutorial/meshes/l_finger.dae"
+```
 
 
 2-create 05-visual.urdf
