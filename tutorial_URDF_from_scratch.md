@@ -179,7 +179,11 @@ roslaunch urdf_tutorial display.launch model:=04-materials.urdf
 rosdep install urdf_tutorial
 ```
 
-will contain files such as: package://urdf_tutorial/meshes/gripper_v0/l_finger_tip.dae
+will contain files such as: "package://urdf_tutorial/meshes/l_finger_tip.dae"
+
+these packages get installed at this location:
+
+/opt/ros/melodic/share/urdf_tutorial
 
 
 
