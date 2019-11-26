@@ -205,3 +205,7 @@ https://github.com/stevendaniluk/ghost
 >urdf_to_graphviz
 +visual link
 ```
+
+- Good simple ROS tutorial with useful commands
+
+http://www.daslhub.org/unlv/wiki/lib/exe/fetch.php?media=courses:ros:ros_3v2.pptx
