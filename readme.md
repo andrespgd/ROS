@@ -172,3 +172,36 @@ cd ..
 catkin_make
 roslaunch servicesim servicesim.launch
 ```
+
+
+-- Good post on how ROS and Gazebo communicate
+
+https://newscrewdriver.com/2018/09/08/examining-basic-requirements-for-mapping-in-ros/
+
+
+-- Online URDF 3D viewer
+
+https://mymodelrobot.appspot.com/
+
+
+-- ROS Tutorial - look at Wiki Chapters
+
+https://github.com/Lauro199471/ROS_Tutorial/wiki
+
+
+-- Basic concepts on ROS and Gazebo
+
+https://www.generationrobots.com/blog/en/robotic-simulation-scenarios-with-gazebo-and-ros/
+
+
+- Good car example to follow
+
+https://github.com/stevendaniluk/ghost
+
+
+- Commands to check URDF:
+```
+>check_urdf
+>urdf_to_graphviz
++visual link
+```
