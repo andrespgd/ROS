@@ -199,6 +199,12 @@ https://www.generationrobots.com/blog/en/robotic-simulation-scenarios-with-gazeb
 https://github.com/stevendaniluk/ghost
 
 
+- Good simple ROS tutorial with useful commands
+
+http://www.daslhub.org/unlv/wiki/lib/exe/fetch.php?media=courses:ros:ros_3v2.pptx
+
+
+
 - Commands to check URDF:
 ```
 >check_urdf
@@ -206,6 +212,19 @@ https://github.com/stevendaniluk/ghost
 +visual link
 ```
 
-- Good simple ROS tutorial with useful commands
 
-http://www.daslhub.org/unlv/wiki/lib/exe/fetch.php?media=courses:ros:ros_3v2.pptx
+- ROS command: convert .xacro to .urdf , check, create .PDF .GV, view .GV
+```
+source devel/setup.bash
+rosrun xacro xacro rrbot.xacro > rrbot.urdf
+check_urdf rrbot.urdf
+urdf_to_graphiz rrbot.urdf
+```
+NOTE: how to view the .GV file ?????
+
+
+- ROS command: if a master is running:
+```
+rqt_graph
+```
+
