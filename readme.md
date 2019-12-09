@@ -71,7 +71,7 @@ source /opt/ros/dashing/setup.bash
 </br></br>
 
 
-## ROS2-Dashing for Ubuntu18.04
+## ROS2-ELOQUENT for Ubuntu18.04
 https://index.ros.org/doc/ros2/Installation/Eloquent/Linux-Install-Debians/
 ```
 sudo locale-gen en_US en_US.UTF-8
