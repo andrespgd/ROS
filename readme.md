@@ -152,6 +152,7 @@ ros2 pkg create ros2_example2_ws
 
 ## ROS2 - ELOQUENT - Create Python packages
 https://www.youtube.com/watch?v=94J0Wl_8JKQ
+https://index.ros.org/doc/ros2/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber/
 ```
 mkdir -p ros2_ws/src
 cd ros2_ws/src/
@@ -161,7 +162,7 @@ ros2 pkg create --build-type ament_cmake test_ros2_pkg
 # remove it
 rm -fr test_ros2_pkg
 
-# create a Python package (w/ dependencies rclpy std_msgs)
+# create a Python package using AMENT_PYTHON (w/ dependencies rclpy std_msgs)
 ros2 pkg create --build-type ament_python ros2_pypkg --dependencies rclpy std_msgs
 ```
 
