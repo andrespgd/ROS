@@ -90,7 +90,7 @@ source /opt/ros/eloquent/setup.bash
 sudo apt install python3-argcomplete
 ```
 
-ROS2 - prebuilt examples to test
+## ROS2 - prebuilt examples to test
 
 term1
 ```
@@ -106,7 +106,7 @@ ros2 run demo_nodes_py listener
 </br></br>
 
 
-ROS2 - COLCON 
+## ROS2 - COLCON 
 - is an iteration on the ROS build tools catkin_make, catkin_make_isolated, catkin_tools and ament_tools
 https://index.ros.org/doc/ros2/Tutorials/Colcon-Tutorial/
 ```
@@ -141,7 +141,7 @@ ros2 run examples_rclcpp_minimal_publisher publisher_member_function
 ```
 </br></br>
 
-ROS2 - Create your own packages
+## ROS2 - Create your own packages
 ```
 ros2 pkg create ros2_example2_ws
 ```
@@ -149,6 +149,22 @@ ros2 pkg create ros2_example2_ws
 -will create folders: include , src
 
 </br></br>
+
+## ROS2 - ELOQUENT - Create Python packages
+https://www.youtube.com/watch?v=94J0Wl_8JKQ
+```
+mkdir -p ros2_ws/src
+cd ros2_ws/src/
+
+# create a c++ package
+ros2 pkg create --build-type ament_cmake test_ros2_pkg
+# remove it
+rm -fr test_ros2_pkg
+
+# create a Python package (w/ dependencies rclpy std_msgs)
+ros2 pkg create --build-type ament_python ros2_pypkg --dependencies rclpy std_msgs
+```
+
 
 ## Cool ROS samples
 
