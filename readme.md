@@ -70,19 +70,41 @@ source /opt/ros/dashing/setup.bash
 ```
 </br></br>
 
+
+## ROS2-Dashing for Ubuntu18.04
+https://index.ros.org/doc/ros2/Installation/Eloquent/Linux-Install-Debians/
+```
+sudo locale-gen en_US en_US.UTF-8
+sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+sudo apt update && sudo apt install curl gnupg2 lsb-release
+curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
+sudo sh -c 'echo "deb [arch=amd64,arm64] http://packages.ros.org/ros2/ubuntu `lsb_release -cs` main" > /etc/apt/sources.list.d/ros2-latest.list'
+sudo apt update
+
+sudo apt install ros-eloquent-desktop
+sudo apt install ros-eloquent-ros-base
+
+source /opt/ros/eloquent/setup.bash
+sudo apt install python3-argcomplete
+```
+
 ROS2 - prebuilt examples to test
 
-terminal1
-``` 
-source /opt/ros/dashing/local_setup.bash
+term1
+```
+source /opt/ros/eloquent/setup.bash
 ros2 run demo_nodes_cpp talker
 ```
-terminal2
-``` 
-source /opt/ros/dashing/local_setup.bash
+
+term2
+```
+source /opt/ros/eloquent/setup.bash
 ros2 run demo_nodes_py listener
 ```
 </br></br>
+
 
 ROS2 - COLCON 
 - is an iteration on the ROS build tools catkin_make, catkin_make_isolated, catkin_tools and ament_tools
