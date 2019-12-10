@@ -222,29 +222,39 @@ https://www.infoq.com/articles/ros-2-gazebo-tutorial/
 https://github.com/chapulina/dolly
 ```
 #0-install ROS Gazebo packages (ONLY needed once)
+sudo apt install ros-dashing-gazebo-ros-pkgs
+# OR
 sudo apt install ros-eloquent-gazebo-ros-pkgs
 ```
 ```
-#1-download/compile
+#1-source ROS2 version
+source /opt/ros/dashing/setup.bash 
+# OR
 source /opt/ros/eloquent/setup.bash 
+
+#2-download/compile
 mkdir -p ~/ws/src
 cd ~/ws/src
 git clone https://github.com/chapulina/dolly
 cd ..
 colcon build
 
-#2-source
+#3-source project
 . /usr/share/gazebo/setup.sh 
 . ~/ws/install/setup.bash 
 
-#3-launch
+#4-launch
 ros2 launch dolly_gazebo dolly.launch.py world:=dolly_empty.world
 # OR
 ros2 launch dolly_gazebo dolly.launch.py world:=dolly_city.world
 ```
-NOTE: if dolly_city.world does NOT start, try restarting UBUNTU and 2source/3launch again
+NOTE: if dolly_city.world does NOT start, try restarting UBUNTU and 3source/4launch again
 
 NOTE: RVIZ not implemented in DOLLY yet (according to GITHUB)
+
+NOTE: dolly starts on DASHING and ELOQUENT, but does NOT follow!!!
+
+NOTE: dolly fails compilation in CRYSTAL
 </br></br>
 
 
