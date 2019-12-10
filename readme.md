@@ -214,8 +214,11 @@ roslaunch servicesim servicesim.launch
 
 
 -- Dolly follower Robot for Ubuntu18-ROS2-Eloquent
+
 https://www.infoq.com/articles/ros-2-gazebo-tutorial/
+
 https://github.com/chapulina/dolly
+
 1-install ROS Gazebo packages
 ```
 sudo apt install ros-eloquent-gazebo-ros-pkgs
