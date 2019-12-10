@@ -234,7 +234,7 @@ colcon build
 
 #3 launch
 ros2 launch dolly_gazebo dolly.launch.py world:=dolly_empty.world
-OR
+# OR
 ros2 launch dolly_gazebo dolly.launch.py world:=dolly_city.world
 ```
 </br></br>
