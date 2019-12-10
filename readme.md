@@ -165,11 +165,11 @@ rm -fr test_ros2_pkg
 # create a Python package using AMENT_PYTHON (w/ dependencies rclpy std_msgs)
 ros2 pkg create --build-type ament_python ros2_pypkg --dependencies rclpy std_msgs
 ```
-
+</br></br>
 
 ## Cool ROS samples
 
--- robotic arm simulation -- Does NOT in Ubuntu18-Ros1-Melodic!
+-- Robotic arm simulation for Ubuntu16-ROS1-Melodic (Does NOT in Ubuntu18-ROS1-Melodic!!!) (NOT ROS2!!!)
 ```
 source /opt/ros/melodic/setup.bash
 mkdir -p ~/catkin_ws/src
@@ -183,7 +183,7 @@ catkin_make
 roslaunch iri_wam_gazebo main.launch
 ```
 
--- wheeled robot simulation -- Does NOT in Ubuntu18-Ros1-Melodic!
+-- Wheeled robot simulation for Ubuntu16-ROS1-Melodic (Does NOT in Ubuntu18-ROS1-Melodic!!!) (NOT ROS2!!!)
 ```
 source /opt/ros/melodic/setup.bash
 mkdir -p ~/catkin_ws/src
@@ -200,7 +200,7 @@ catkin_make
 roslaunch sumit_xl_course_basics main.launch
 ```
 
--- full environment simulation -- Works in Ubuntu18-Ros1-Melodic
+-- Full environment simulation for Ubuntu18-ROS1-Melodic (NOT ROS2!!!)
 ```
 source /opt/ros/melodic/setup.bash
 mkdir -p ~/catkin_ws/src
