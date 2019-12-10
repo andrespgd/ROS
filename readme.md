@@ -239,6 +239,9 @@ ros2 launch dolly_gazebo dolly.launch.py world:=dolly_empty.world
 # OR
 ros2 launch dolly_gazebo dolly.launch.py world:=dolly_city.world
 ```
+NOTE: if dolly_city.world does NOT start, try restarting UBUNTU and 3source/4launch again
+
+NOTE: RVIZ not implemented in DOLLY yet (according to GITHUB)
 </br></br>
 
 
