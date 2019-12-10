@@ -1,7 +1,7 @@
-# ROS INSTALL
+# ROS INSTALLS
 </br></br>
 
-## ROS1-Melodic for Ubuntu18.04
+# ROS1-Melodic for Ubuntu18.04
 
 http://wiki.ros.org/melodic/Installation/Ubuntu
 
@@ -25,7 +25,7 @@ source /opt/ros/melodic/setup.bash
 ```
 </br></br>
 
-## ROS1-Kinetic for Ubuntu16.04
+# ROS1-Kinetic for Ubuntu16.04
 http://wiki.ros.org/kinetic/Installation/Ubuntu
 ```diff
 - will NOT install on Ubuntu18.04 !!!
@@ -46,7 +46,7 @@ source /opt/ros/kinetic/setup.bash
 </br></br>
 
 
-## ROS2-Dashing for Ubuntu18.04
+# ROS2-Dashing for Ubuntu18.04
 https://index.ros.org/doc/ros2/Installation/Dashing/Linux-Install-Debians/
 ```
 sudo locale-gen en_US en_US.UTF-8
@@ -71,7 +71,7 @@ source /opt/ros/dashing/setup.bash
 </br></br>
 
 
-## ROS2-ELOQUENT for Ubuntu18.04
+# ROS2-ELOQUENT for Ubuntu18.04
 https://index.ros.org/doc/ros2/Installation/Eloquent/Linux-Install-Debians/
 ```
 sudo locale-gen en_US en_US.UTF-8
@@ -106,7 +106,9 @@ ros2 run demo_nodes_py listener
 </br></br>
 
 
-## ROS2 - COLCON 
+## ROS2
+
+# ROS2 - COLCON 
 - is an iteration on the ROS build tools catkin_make, catkin_make_isolated, catkin_tools and ament_tools
 https://index.ros.org/doc/ros2/Tutorials/Colcon-Tutorial/
 ```
@@ -141,7 +143,7 @@ ros2 run examples_rclcpp_minimal_publisher publisher_member_function
 ```
 </br></br>
 
-## ROS2 - Create your own packages
+# ROS2 - Create your own packages
 ```
 ros2 pkg create ros2_example2_ws
 ```
@@ -150,7 +152,7 @@ ros2 pkg create ros2_example2_ws
 
 </br></br>
 
-## ROS2 - ELOQUENT - Create Python packages
+# ROS2 - ELOQUENT - Create Python packages
 https://www.youtube.com/watch?v=94J0Wl_8JKQ
 https://index.ros.org/doc/ros2/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber/
 ```
@@ -167,7 +169,7 @@ ros2 pkg create --build-type ament_python ros2_pypkg --dependencies rclpy std_ms
 ```
 </br></br>
 
-## Cool ROS samples
+## Cool ROS1/ROS2 samples
 
 -- Robotic arm simulation for Ubuntu16-ROS1-Melodic (Does NOT in Ubuntu18-ROS1-Melodic!!!) (NOT ROS2!!!)
 ```
@@ -219,10 +221,11 @@ https://www.infoq.com/articles/ros-2-gazebo-tutorial/
 
 https://github.com/chapulina/dolly
 ```
-#1-install ROS Gazebo packages
+#0-install ROS Gazebo packages (ONLY needed once)
 sudo apt install ros-eloquent-gazebo-ros-pkgs
-
-#2-download/compile
+```
+```
+#1-download/compile
 source /opt/ros/eloquent/setup.bash 
 mkdir -p ~/ws/src
 cd ~/ws/src
@@ -230,20 +233,22 @@ git clone https://github.com/chapulina/dolly
 cd ..
 colcon build
 
-#3-source
+#2-source
 . /usr/share/gazebo/setup.sh 
 . ~/ws/install/setup.bash 
 
-#4-launch
+#3-launch
 ros2 launch dolly_gazebo dolly.launch.py world:=dolly_empty.world
 # OR
 ros2 launch dolly_gazebo dolly.launch.py world:=dolly_city.world
 ```
-NOTE: if dolly_city.world does NOT start, try restarting UBUNTU and 3source/4launch again
+NOTE: if dolly_city.world does NOT start, try restarting UBUNTU and 2source/3launch again
 
 NOTE: RVIZ not implemented in DOLLY yet (according to GITHUB)
 </br></br>
 
+
+## ROS posts, tutorials, resources
 
 -- Good post on how ROS and Gazebo communicate
 
@@ -275,6 +280,7 @@ https://github.com/stevendaniluk/ghost
 http://www.daslhub.org/unlv/wiki/lib/exe/fetch.php?media=courses:ros:ros_3v2.pptx
 
 
+## ROS commands
 
 - Commands to check URDF:
 ```
