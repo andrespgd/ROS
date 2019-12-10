@@ -229,10 +229,12 @@ cd ~/ws/src
 git clone https://github.com/chapulina/dolly
 cd ..
 colcon build
+
+#3-source
 . /usr/share/gazebo/setup.sh 
 . ~/ws/install/setup.bash 
 
-#3 launch
+#4-launch
 ros2 launch dolly_gazebo dolly.launch.py world:=dolly_empty.world
 # OR
 ros2 launch dolly_gazebo dolly.launch.py world:=dolly_city.world
