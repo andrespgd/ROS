@@ -213,6 +213,31 @@ roslaunch servicesim servicesim.launch
 ```
 
 
+-- Dolly follower Robot for Ubuntu18-ROS2-Eloquent
+https://www.infoq.com/articles/ros-2-gazebo-tutorial/
+https://github.com/chapulina/dolly
+1-install ROS Gazebo packages
+```
+sudo apt install ros-eloquent-gazebo-ros-pkgs
+```
+2-install/run model
+```
+source /opt/ros/eloquent/setup.bash 
+mkdir -p ~/ws/src
+cd ~/ws/src
+git clone https://github.com/chapulina/dolly
+cd ..
+colcon build
+. /usr/share/gazebo/setup.sh 
+. ~/ws/install/setup.bash 
+
+ros2 launch dolly_gazebo dolly.launch.py world:=dolly_empty.world
+OR
+ros2 launch dolly_gazebo dolly.launch.py world:=dolly_empty.world
+```
+</br></br>
+
+
 -- Good post on how ROS and Gazebo communicate
 
 https://newscrewdriver.com/2018/09/08/examining-basic-requirements-for-mapping-in-ros/
