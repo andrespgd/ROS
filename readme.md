@@ -218,13 +218,11 @@ roslaunch servicesim servicesim.launch
 https://www.infoq.com/articles/ros-2-gazebo-tutorial/
 
 https://github.com/chapulina/dolly
-
-1-install ROS Gazebo packages
 ```
+#1-install ROS Gazebo packages
 sudo apt install ros-eloquent-gazebo-ros-pkgs
-```
-2-install/run model
-```
+
+#2-download/compile
 source /opt/ros/eloquent/setup.bash 
 mkdir -p ~/ws/src
 cd ~/ws/src
@@ -234,9 +232,10 @@ colcon build
 . /usr/share/gazebo/setup.sh 
 . ~/ws/install/setup.bash 
 
+#3 launch
 ros2 launch dolly_gazebo dolly.launch.py world:=dolly_empty.world
 OR
-ros2 launch dolly_gazebo dolly.launch.py world:=dolly_empty.world
+ros2 launch dolly_gazebo dolly.launch.py world:=dolly_city.world
 ```
 </br></br>
 
