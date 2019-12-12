@@ -84,7 +84,7 @@ rosrun rospy_tutorials listener __name:=listener_renamed
 # refresh RQT
 ```
 
-![](media/tutorial0_talker_listener_01.png)
+![](/media/tutorial0_talker_listener_01.png)
 
 ![](media/tutorial0_talker_listener_02.png)
 
