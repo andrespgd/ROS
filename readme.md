@@ -199,6 +199,17 @@ ros2 run examples_rclcpp_minimal_publisher publisher_member_function
 ```
 </br></br>
 
+## ROS2 - ELOQUENT - TODO: 
+
+-create package, compile, run, rqt
+
+-use topic_publisher.py  topic_subscriber.py  doubler.py   from:
+
+https://github.com/osrf/rosbook/tree/master/code/basics/src
+
+</br></br>
+
+
 # Cool ROS1/ROS2 samples
 
 -- Robotic arm simulation for Ubuntu16-ROS1-Melodic (Does NOT in Ubuntu18-ROS1-Melodic!!!) (NOT ROS2!!!)
