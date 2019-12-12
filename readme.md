@@ -124,19 +124,17 @@ source /opt/ros/eloquent/setup.bash
 ros2 run demo_nodes_py listener
 ```
 
-term3 - RQT
+term3 - RQT (Plugins -> Instrospection -> Node Graph)
 ```
 source /opt/ros/eloquent/setup.bash
 rqt
 ```
-Plugins -> Instrospection -> Node Graph
 
-term4 - Talker: namespace, node renaming, topic renaming
+term4 - Talker: namespace, node renaming, topic renaming (Refresh RQT)
 ```
 source /opt/ros/eloquent/setup.bash
 ros2 run demo_nodes_cpp talker --ros-args -r __ns:=/demo -r __node:=my_talker -r chatter:=my_topic
 ```
-Refresh RQT
 </br></br>
 
 
