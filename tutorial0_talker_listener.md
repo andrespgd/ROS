@@ -1,3 +1,5 @@
+# TUTORIAL - BASIC RUN NODES, RENAME, AND RQT_GRAPH
+
 ```
 # terminal
 source /opt/ros/melodic/setup.bash
@@ -81,3 +83,13 @@ source /opt/ros/melodic/setup.bash
 rosrun rospy_tutorials listener __name:=listener_renamed
 # refresh RQT
 ```
+
+![](tutorial0_talker_listener_01.png)
+
+![](tutorial0_talker_listener_02.png)
+
+![](tutorial0_talker_listener_03.png)
+
+![](tutorial0_talker_listener_04.png)
+
+![](tutorial0_talker_listener_05.png)
