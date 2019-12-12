@@ -108,7 +108,34 @@ ros2 run demo_nodes_py listener
 ```
 </br></br>
 
-## ROS2 - COLCON 
+
+## ROS2 - ELOQUENT - Create your own package
+```
+ros2 pkg create ros2_example2_ws
+```
+-will create files: CMakeLists.txt, package.xml
+-will create folders: include , src
+
+</br></br>
+
+## ROS2 - ELOQUENT - AMENT_PYTHON - Create Python packages
+https://www.youtube.com/watch?v=94J0Wl_8JKQ
+https://index.ros.org/doc/ros2/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber/
+```
+mkdir -p ros2_ws/src
+cd ros2_ws/src/
+
+# create a c++ package
+ros2 pkg create --build-type ament_cmake test_ros2_pkg
+# remove it
+rm -fr test_ros2_pkg
+
+# create a Python package using AMENT_PYTHON (w/ dependencies rclpy std_msgs)
+ros2 pkg create --build-type ament_python ros2_pypkg --dependencies rclpy std_msgs
+```
+</br></br>
+
+## ROS2 - ELOQUENT - COLCON - Compile
 - is an iteration on the ROS build tools catkin_make, catkin_make_isolated, catkin_tools and ament_tools
 https://index.ros.org/doc/ros2/Tutorials/Colcon-Tutorial/
 ```
@@ -140,32 +167,6 @@ terminal2 - publisher
 cd ros2_example_ws/
 . install/setup.bash 
 ros2 run examples_rclcpp_minimal_publisher publisher_member_function
-```
-</br></br>
-
-## ROS2 - Create your own packages
-```
-ros2 pkg create ros2_example2_ws
-```
--will create files: CMakeLists.txt, package.xml
--will create folders: include , src
-
-</br></br>
-
-## ROS2 - ELOQUENT - Create Python packages
-https://www.youtube.com/watch?v=94J0Wl_8JKQ
-https://index.ros.org/doc/ros2/Tutorials/Writing-A-Simple-Py-Publisher-And-Subscriber/
-```
-mkdir -p ros2_ws/src
-cd ros2_ws/src/
-
-# create a c++ package
-ros2 pkg create --build-type ament_cmake test_ros2_pkg
-# remove it
-rm -fr test_ros2_pkg
-
-# create a Python package using AMENT_PYTHON (w/ dependencies rclpy std_msgs)
-ros2 pkg create --build-type ament_python ros2_pypkg --dependencies rclpy std_msgs
 ```
 </br></br>
 
