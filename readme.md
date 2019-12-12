@@ -90,6 +90,23 @@ source /opt/ros/eloquent/setup.bash
 sudo apt install python3-argcomplete
 ```
 
+## ROS2-ELOQUENT for Ubuntu18.04 - RQT Install
+```
+sudo apt-get update -y
+
+sudo apt-get install -y python3-rospkg
+
+sudo apt update
+
+sudo apt-get upgrade
+
+sudo apt install ros-eloquent-rqt-*
+```
+To run (not working currently)
+```
+rqt
+```
+
 
 # ROS2
 
