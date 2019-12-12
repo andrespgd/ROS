@@ -320,6 +320,14 @@ https://github.com/stevendaniluk/ghost
 http://www.daslhub.org/unlv/wiki/lib/exe/fetch.php?media=courses:ros:ros_3v2.pptx
 
 
+-- Good ROS1 book - Programming Robots with ROS
+
+https://www.amazon.com/Programming-Robots-ROS-Practical-Introduction-ebook/dp/B01882NRUQ
+
+https://github.com/osrf/rosbook
+
+https://github.com/osrf/rosbook/tree/master/code/basics/src
+
 # ROS commands
 
 - Commands to check URDF:
