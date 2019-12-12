@@ -226,6 +226,7 @@ catkin_make
 roslaunch iri_wam_gazebo main.launch
 ```
 
+
 -- Wheeled robot simulation for Ubuntu16-ROS1-Melodic (Does NOT in Ubuntu18-ROS1-Melodic!!!) (NOT ROS2!!!)
 ```
 source /opt/ros/melodic/setup.bash
@@ -243,6 +244,7 @@ catkin_make
 roslaunch sumit_xl_course_basics main.launch
 ```
 
+
 -- Full environment simulation for Ubuntu18-ROS1-Melodic (NOT ROS2!!!)
 ```
 source /opt/ros/melodic/setup.bash
@@ -253,6 +255,24 @@ git clone https://github.com/Kukanani/vision_msgs
 cd ..
 catkin_make
 roslaunch servicesim servicesim.launch
+```
+
+
+-- ROS1-Melodic Turtlebot PKG install (there is not an apt-get available yet)
+
+https://github.com/gaunthan/Turtlebot2-On-Melodic
+
+```
+mkdir -p catkin_ws/src
+cd catkin_ws
+catkin_make
+curl -sLf https://raw.githubusercontent.com/gaunthan/Turtlebot2-On-Melodic/master/install_basic.sh | bash
+catkin_make
+sudo apt-get install ros-melodic-joy*
+catkin_make
+
+source ./devel/setup.bash
+roslaunch turtlebot_gazebo turtlebot_world.launch
 ```
 
 
