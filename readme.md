@@ -102,7 +102,7 @@ sudo apt-get upgrade
 
 sudo apt install ros-eloquent-rqt-*
 ```
-To run (not working currently)
+To run (will show errors on terminal)
 ```
 rqt
 ```
@@ -112,17 +112,31 @@ rqt
 
 ## ROS2 - prebuilt examples to test
 
-term1
+term1 - Talker
 ```
 source /opt/ros/eloquent/setup.bash
 ros2 run demo_nodes_cpp talker
 ```
 
-term2
+term2 - Listener
 ```
 source /opt/ros/eloquent/setup.bash
 ros2 run demo_nodes_py listener
 ```
+
+term3 - RQT
+```
+source /opt/ros/eloquent/setup.bash
+rqt
+```
+Plugins -> Instrospection -> Node Graph
+
+term4 - Talker: namespace, node renaming, topic renaming
+```
+source /opt/ros/eloquent/setup.bash
+ros2 run demo_nodes_cpp talker --ros-args -r __ns:=/demo -r __node:=my_talker -r chatter:=my_topic
+```
+Refresh RQT
 </br></br>
 
 
