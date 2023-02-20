@@ -3,7 +3,11 @@ https://docs.ros.org/en/foxy/How-To-Guides/Visualizing-ROS-2-Data-With-Foxglove-
 
 
 # ROS INSTALLS
-</br></br>
+
+
+## ROS2-Humble on Ubuntu22
+https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html
+
 
 ## ROS1-Melodic for Ubuntu18.04
 
